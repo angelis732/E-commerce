@@ -1,0 +1,19 @@
+.mainWelcome{
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .mainWelcome{
+    display: block;
+    text-align: center;
+  }
+}
+
+.prueba{
+  position:relative!important;
+  h1{
+    position: absolute!important;
+    bottom: 2rem;
+    left: 2rem;
+  }
+}

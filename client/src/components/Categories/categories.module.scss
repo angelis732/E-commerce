@@ -1,0 +1,65 @@
+
+.dropCategory{
+  display: flex;
+
+  .botoncito{
+    display: flex;
+    justify-items: start;
+    background: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid #bdbdbd;
+    border-radius: 25px;
+    i {
+      font-size: 20px;
+      color:rgb(82, 82, 82)
+    }
+  }
+
+  .dropList{
+    color: black;
+    margin: 5%;
+    padding: 5%;
+  }
+
+}
+.ctnDropList{
+  border: 1px solid #bdbdbd;
+  border-radius: 10%;
+}
+
+
+@media screen and (min-width: 600px) {
+  .dropCategory{
+    display: flex;
+    grid-template-columns: auto 10em 10em 10em 10em;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .botoncito{
+      display: flex;
+      justify-items: start;
+      background: white;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      padding: .5em 2em;
+      border: 1px solid #bdbdbd;
+      border-radius: 25px;
+      i {
+        font-size: 25px;
+        color:rgb(82, 82, 82)
+      }
+    }
+
+    .dropList{
+      color: black;
+      margin: 10px;
+      padding: 5%;
+    }
+
+  }
+  .ctnDropList{
+    border: 1px solid #bdbdbd;
+    border-radius: 10%;
+  }
+}
+
+

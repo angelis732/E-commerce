@@ -1,0 +1,17 @@
+
+main {
+    background-image: url("./img/fondo.png");
+}
+
+//Clase de las alertas del carrito
+.alertTitle{
+    font-size: 20px;
+}
+
+
+@media screen and (max-device-width : 360px){
+
+    main {
+       width: 100%;
+    }
+}

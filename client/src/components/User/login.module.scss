@@ -1,0 +1,169 @@
+.globalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 1rem;
+
+  .formContainer {
+    padding: 2% 1%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(233, 185, 83);
+    box-shadow: 0 2px 2px 0 rgb(175, 128, 56);
+
+
+    .form {
+      margin: 15px 15px;
+
+      .btnIniciarSesion {
+        margin-top: 5%;
+        border: none;
+
+        .btnText {
+          background-color: #f5b453;
+          color: black;
+        }
+
+        .btnGoogle {
+          font-size: small;
+          background-color: #4285F4;
+          color: white;
+
+        }
+
+        .btnFacebook {
+          font-size: small;
+          background-color: #3b5998;
+          color: white;
+        }
+      }
+    }
+
+    .input {
+      border: 2px solid black;
+      box-shadow: none;
+    }
+
+    .linkRegistrarte {
+      text-align: right;
+      margin-right: 7%;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+  }
+}
+
+
+.cerrar {
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0.2em;
+}
+
+
+.imgGoogle {
+  width: 1.2rem;
+  background-color: white;
+  margin-left: 0;
+  border-radius: 5px;
+}
+
+.imgFacebook {
+  width: 1.5rem;
+  margin-left: 3%;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .globalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3rem;
+
+    .formContainer {
+      padding: 2% 1%;
+      width: 35%;
+      margin: 0 auto;
+      border-radius: 10px;
+      background-color: white;
+      border: 1px solid rgb(233, 185, 83);
+      box-shadow: 0 2px 2px 0 rgb(175, 128, 56);
+
+
+      .form {
+        margin: 30px 30px;
+
+        .btnIniciarSesion {
+          margin-top: 12%;
+          border: none;
+
+
+          .btnText {
+            font-weight: bold;
+            background-color: #f5b453;
+            color: black;
+          }
+
+          .btnGoogle {
+            font-size: medium;
+            background-color: #4285F4;
+            color: white;
+
+          }
+
+          .btnFacebook {
+            font-size: medium;
+            background-color: #3b5998;
+            color: white;
+          }
+        }
+      }
+
+      .input {
+        border: 2px solid black;
+        box-shadow: none;
+      }
+
+      .linkRegistrarte {
+        text-align: right;
+        margin-right: 7%;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+    }
+  }
+
+
+  .cerrar {
+    cursor: pointer;
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+
+  .imgGoogle {
+    width: 1.5rem;
+    background-color: white;
+    margin-left: 0;
+    border-radius: 5px;
+
+  }
+
+  .imgFacebook {
+    width: 1.5rem;
+    margin-left: 3%;
+    border-radius: 5px;
+  }
+}

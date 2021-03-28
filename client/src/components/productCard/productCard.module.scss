@@ -1,0 +1,146 @@
+.card{
+    background-color: white;
+    width: 9rem;
+    padding-bottom: 5%;
+    margin: 2%;
+    border: 1px solid rgb(233, 185, 83);
+    box-shadow: 0 2px 2px 0 rgb(175, 128, 56);
+    border-radius: 5%;
+    overflow: hidden;
+    transition: all 0.25s;
+
+    &:hover{
+        transform : translateY(-15px);
+        border: 1px solid rgb(233, 185, 83);
+        box-shadow: 0 2px 2px 0  rgb(248, 219, 157);
+
+    }
+    div{
+        img{
+            padding: 1%;
+            width: 8em;
+            height: 8em;
+            align-self: center;
+        }
+
+    }
+    
+    .cardbody{
+        .nameProduct{
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    ul{
+        li{
+            border: none;
+            font-size: small;
+        }
+    }
+
+    div{
+        padding: .1rem;
+        contain: layout;
+        display: flex;
+        justify-content: space-evenly;
+        button{
+                display: grid;
+                justify-items: start;
+                background: white;
+                box-shadow: 3px 3px 5px rgb(177, 177, 177);
+                padding: .1em 1em;
+                border: 1px solid #bdbdbd;
+                margin-top: 0;
+                border-radius: 25px;
+                
+                
+                i {
+                    font-size: 20px;
+                    color:rgb(82, 82, 82)
+                }
+        }
+    }
+}
+
+.soldOut{
+    color: red;
+    font-size: small;
+    margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .card{
+        background-color: white;
+        width: 18rem;
+        padding-bottom: 10px;
+        margin: 30px;
+        border: 1px solid rgb(233, 185, 83);
+        box-shadow: 0px 2px 2px 0px rgb(175, 128, 56);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all 0.25s;
+
+        &:hover{
+            transform : translateY(-15px);
+            border: 1px solid rgb(233, 185, 83);
+            border-color: rgb(248, 219, 157);
+            box-shadow: 0 2px 2px 0  rgb(248, 219, 157);
+
+        }
+        div{
+            img{
+                padding: .5em;
+                width: 15em;
+                height: 15em;
+                align-self: center;
+            }
+
+        }
+
+        .cardbody{
+            padding: .5rem;
+            .nameProduct{
+                font-size: x-large;
+                text-align: center;
+            }
+        }
+        ul{
+            li{
+                border: none;
+                margin-bottom: 5px;
+                font-size: x-large;
+            }
+        }
+
+        div{
+            padding: .5rem;
+            contain: layout;
+            display: flex;
+            justify-content: space-evenly;
+            button{
+                display: grid;
+                justify-items: start;
+                background: white;
+                box-shadow: 3px 3px 5px rgb(177, 177, 177);
+                padding: .5em 2em;
+                border-radius: 5px;
+                border: 1px solid #bdbdbd;
+                margin-top: 1em;
+                border-radius: 25px;
+
+
+                i {
+                    font-size: 25px;
+                    color:rgb(82, 82, 82)
+                }
+            }
+        }
+    }
+
+    .soldOut{
+        color: red;
+        font-size: large;
+        margin: auto;
+    }
+}

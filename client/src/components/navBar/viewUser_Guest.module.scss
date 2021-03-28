@@ -1,0 +1,130 @@
+.viewUser_Guest {
+  display: flex;
+  align-items: flex-end;
+}
+
+.ctnCart {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  height: 40px;
+  padding: 0 0.5rem;
+  width: fit-content;
+  border: 1px solid #bdbdbd;
+}
+.cart{
+  display: flex;
+  border: none;
+  align-items: center;
+  background-color: white;
+}
+.dropMyAccount{
+  border: none;
+  background-color: white;
+}
+
+.Muibadge-badge{
+  background-color: coral;
+  color: black;
+}
+.myAccount{
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  border-radius: 9999px;
+  height: 2.5rem;
+  padding: 0 0.5em;
+  width: fit-content;
+  border: 1px solid #bdbdbd
+}
+
+.icon{
+  margin-right: 5%;
+}
+.carritoCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:0;
+  margin-top:0;
+  margin-right: 0;
+  background-color:rgb(247, 244, 244);
+
+}
+
+.dropdownList {
+  left: -200% !important;
+}
+
+.navItem {
+  margin-left: auto;
+}
+
+.userName{
+  display: none;
+}
+
+//Mobile
+@media screen and (min-width: 600px) {
+  .viewUser_Guest {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .ctnCart {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 9999px;
+    height: 48px;
+    padding: 0 1em;
+    width: fit-content;
+    border: 1px solid #bdbdbd;
+
+  }
+  .cart{
+    display: flex;
+    border: none;
+    align-items: center;
+    background-color: white;
+  }
+  .dropMyAccount{
+    border: none;
+    background-color: white;
+  }
+  .myAccount{
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    border-radius: 9999px;
+    height: 3rem;
+    padding: 0 1em;
+    width: fit-content;
+    border: 1px solid #bdbdbd
+  }
+  .dropdownList {
+    left: -200% !important;
+  }
+  .icon{
+    margin-right: 5%;
+  }
+  .carritoCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:0;
+    margin-top:0;
+    margin-right: 0;
+    background-color:rgb(247, 244, 244);
+
+  }
+
+  .userName{
+    display: inline-flex;
+  }
+
+  .navItem {
+    margin-left: auto;
+  }
+}

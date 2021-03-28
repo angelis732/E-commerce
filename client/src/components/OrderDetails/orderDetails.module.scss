@@ -1,0 +1,342 @@
+
+.inlineLabel {
+  margin-right: 0.25em;
+}
+
+.btnExtraSmall {
+  line-height: 1;
+  margin: 0;
+  padding: .2rem;
+  background-color: #f5b453;
+}
+
+.volver{
+  display: inline-block !important;
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  padding: .2em 1em;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-left: 30px;
+}
+
+.primerDiv {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 0;
+}
+.title{
+  margin-left: 10%;
+  margin-top: 2%;
+  background-color: white;
+  padding: 1%;
+  font-size: 1.5rem;
+}
+
+
+.container {
+  margin: 5%;
+  width: 90%;
+  background-color: white;
+}
+.letterhead {
+  display: flex;
+  margin-left: 0.5rem;
+  padding-left: 1rem;
+  font-size: small;
+}
+
+.letterLeft{
+  font-size: medium;
+}
+
+.editar{
+  text-align: left;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  .icon{
+    padding: 0;
+  }
+
+}
+
+.containerProducts {
+  padding-top: 5%;
+  display: grid;
+}
+
+.divProducts1{
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  padding: 0.5rem;
+  flex-direction: row;
+  border: 1px solid rgb(202, 202, 202);
+  margin: auto;
+}
+
+
+.image{
+  width: 15%;
+  height: 60px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .imgResponsive{
+    max-width: 90%;
+    max-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.name{
+  width: 5em;
+  height: 60px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fontSize{
+  font-size: small;
+}
+.fontSizeTotal{
+  font-size: medium;
+}
+.quantity{
+  width: 2rem;
+  height: 60px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+}
+.price{
+  height: 60px;
+  width: 4rem;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.ctnTotal {
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1%;
+}
+.totalTable{
+  display: inline-flex;
+  border-radius: 10px;
+  border-top: 1px solid rgb(202, 202, 202);
+  border-left: 1px solid rgb(202, 202, 202);
+  box-shadow: 3px 4px 4px rgb(202, 202, 202);
+}
+.fontTotales{
+  font-size: small;
+}
+.total{
+  font-size: medium;
+}
+
+@media screen and (min-width: 600px) {
+  .inlineLabel {
+    margin-right: 0.25em;
+  }
+
+  .btnExtraSmall {
+    line-height: 1;
+  }
+
+  .volver{
+    display: inline-block !important;
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: .5em 2em;
+    border-radius: 5px;
+    margin-top: 1em;
+    margin-left: 50px;
+  }
+
+  .letterLeft{
+    display: -moz-inline-block;
+    font-size: large;
+    text-align: left;
+    width: 12rem
+
+  }
+
+  .bodyTable{
+    display: inline-block;
+    width: 45rem
+  }
+  .primerDiv{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: auto;
+
+    .title{
+      margin-left: 10%;
+      margin-top: 2%;
+      background-color: white;
+      padding: 1%;
+    }
+
+    .container {
+      margin: 20px;
+      width: 40%;
+      align-self: center;
+      background-color: white;
+
+      .letterhead{
+        display: flex;
+        margin-right: 5px;
+        margin-left: 20px;
+        padding-left: 5px;
+        font-size: medium;
+
+      }
+
+      .editar{
+        text-align: left;
+
+        &:hover{
+          cursor: pointer;
+        }
+
+        .icon{
+          padding: 0;
+        }
+
+      }
+      .containerProducts{
+        padding-top: 5%;
+        display: grid;
+
+
+        .divProducts1{
+          background-color: white;
+          display: flex;
+          border-radius: 10px;
+          padding: 1rem;
+          flex-direction: row;
+          max-width: 750px;
+          border-top: 1px solid rgb(202, 202, 202);
+          border-left: 1px solid rgb(202, 202, 202);
+          box-shadow: 7px 7px 5px rgb(202, 202, 202);
+          margin: auto;
+        }
+
+
+        .image{
+          width: 8rem;
+          height: 100px;
+          background-color: rgb(245, 245, 245);
+          border-right: 1px solid rgb(202, 202, 202);
+          border-bottom: 1px solid rgb(202, 202, 202);
+          border-radius: 5px;
+          margin-right: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .imgResponsive{
+            max-width: 90px;
+            max-height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .name{
+          width: 15rem;
+          height: 100px;
+          background-color: rgb(245, 245, 245);
+          border-right: 1px solid rgb(202, 202, 202);
+          border-bottom: 1px solid rgb(202, 202, 202);
+          border-radius: 5px;
+          margin-right: 5px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        .quantity{
+          width: 6rem;
+          height: 100px;
+          background-color: rgb(245, 245, 245);
+          border-right: 1px solid rgb(202, 202, 202);
+          border-bottom: 1px solid rgb(202, 202, 202);
+          border-radius: 5px;
+          margin-right: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+
+        }
+        .price{
+          height: 100px;
+          width: 6rem;
+          background-color: rgb(245, 245, 245);
+          border-right: 1px solid rgb(202, 202, 202);
+          border-bottom: 1px solid rgb(202, 202, 202);
+          border-radius: 5px;
+          margin-right: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+      }
+
+
+    }
+  }
+.aceptar{
+  margin:0;
+}
+  .fontSize{
+    font-size: large;
+  }
+  .fontTotales{
+    font-size: medium;
+  }
+
+  .fontSizeTotal{
+    font-size: x-large;
+  }
+
+  .ctnTotal{
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    .totalTable{
+      display: inline-flex;
+      border-radius: 10px;
+      padding: 0 0.5rem;
+      margin-bottom: 0;
+    }
+  }
+.total{
+  font-size: x-large;
+}
+}
+

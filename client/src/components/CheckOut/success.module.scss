@@ -1,0 +1,13 @@
+.contenedorImagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em;
+    .titulito{
+        margin: .5em;
+    }
+    .imagencita{
+        width: 30em;
+        margin: .5em;
+    }
+}

@@ -1,0 +1,91 @@
+
+.container{
+  margin:auto;
+  padding: 5rem;
+  display: block;
+
+  .arrow{
+    display: grid;
+    justify-items: start;
+    background: white;
+    box-shadow: 3px 3px 5px rgb(139, 139, 139);
+    padding: .5em 2em;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    margin-top: 1em;
+    border-radius: 25px;
+
+    @media screen and (max-width: 360px) {
+      margin-left: 50px;
+    }
+    
+  }
+  
+  .detail{
+    margin-top: 3em;
+    padding-bottom: 3em;
+    display: flex;
+    align-self: center;
+
+    @media screen and (max-width: 360px) {
+      display: block;
+      
+      .data {
+        display: grid;
+        grid-row-gap: 1em;
+        margin-left: 80px;
+
+        @media screen and (max-width: 360px) {
+          width: 100%;
+          margin-left: -40px;
+      }
+        .start{
+          display: flex;
+        }
+      }     
+      .image {
+        display: grid;
+        grid-row-gap: 1em;
+        margin-left: 20px;
+      }
+        img {
+          @media screen and (max-width: 360px) {
+            margin-left: -100px;
+        }
+        }
+    }   
+  }
+}
+.sectionPrincipal{
+
+div{
+  display: flex;
+}
+.reseñas{
+  @media screen and (max-width: 360px) {
+    align-self:flex-start;
+    font-size: 20px;
+    margin-left: -40px;
+    color:rgb(48, 48, 48)
+}
+
+}
+.divReview{
+  display: grid;
+  grid-template-columns: auto auto;
+
+  @media screen and (max-width: 360px) {
+    grid-template-columns:none;
+    margin-left: -70px;
+    }
+  }
+}
+
+.estrellitas{
+color: gold
+}
+
+
+
+
+

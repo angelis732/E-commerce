@@ -1,0 +1,19 @@
+.container{
+    background-color: white;
+}
+.button_{
+    background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 9999px;
+        height: 46px;
+        padding: 0 1em;
+        width: fit-content;
+        border: 1px solid #bdbdbd;
+        color: black;
+        // &:hover{}
+}
+.estrellitas{
+    color: gold;
+}

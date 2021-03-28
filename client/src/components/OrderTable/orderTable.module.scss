@@ -1,0 +1,51 @@
+.title{
+  margin-left: 5%;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.cont{
+  border: 1px solid rgb(233, 185, 83);
+  box-shadow: 2px 2px 3px rgb(175, 128, 56);
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  margin: 1% 5% ;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1%;
+}
+
+.table {
+  text-align: center;
+  align-content: space-evenly;
+  margin-bottom: 0;
+}
+
+.th{
+  text-align: center;
+  width: 2%;
+}
+
+.select{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 5.5%;
+  background-color: white;
+}
+
+.filterState{
+  background-color: #f5b453;
+  color: black;
+  border: none;
+}
+
+.volver{
+  display: inline-block !important;
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  padding: .5em 2em;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-left: 50px;
+}

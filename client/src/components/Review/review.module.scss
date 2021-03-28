@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align-last: auto;
+    margin: 2rem;
+    border: 1px solid #bdbdbd;
+    box-shadow: 3px 3px 5px rgb(177, 177, 177);
+    background-color: white;
+    padding: 1em;
+    width: 30rem;
+
+    @media screen and (max-width: 360px) {
+        width: 100%;
+    }
+    
+    div{   
+        flex-direction: column;
+    }
+
+}
+.estrella{
+    color: gold
+}
+.labelDate{
+    margin-left: 80%;
+}

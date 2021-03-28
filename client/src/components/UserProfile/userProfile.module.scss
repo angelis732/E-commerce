@@ -1,0 +1,28 @@
+.userCard{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+  .cardGestion{
+    text-align: center;
+  }
+  .cardBody{
+    display: flex;
+    align-content: space-between;
+  }
+
+  .linksGestiones{
+   padding: 1.5%;
+  }
+
+  .buttonGestion{
+    border-radius: 10px;
+    border-color: #f5b453;
+    background-color: white;
+
+    &:hover {
+      background-color: #f5b453;
+    }
+  }

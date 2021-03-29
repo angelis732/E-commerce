@@ -13,7 +13,7 @@ function UserOrdersTable (props) {
   const history = useHistory();
   
    useEffect(() =>{
-      getOrdersUser(props.userInfo.id)
+      props.getOrdersUser(props.userInfo.id)
    }, [props.userInfo.id])
   
   const formatDate = (date) => {

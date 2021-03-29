@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './review.module.scss';
 import Moment from 'moment';
 
-
 export default function Review({data}) {
 
 function formatDate(date) {
@@ -72,8 +71,6 @@ function rate(valor){
     
     )
   }
-  
-  
 }
 
 

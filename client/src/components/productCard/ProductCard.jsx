@@ -28,6 +28,7 @@ export default function ProductCard({ data }) {
 
     return (
         <div className={styles.card}  >
+          <Link to={`/products/detalle/${data.id}`} style={{ textDecoration: 'none', color: 'black' }}>
             <div>
                 {data.images ? (
                     <img src={data.images[0].url} class="card-img-top"  alt="No se encontró la imagen"/>)
@@ -35,17 +36,20 @@ export default function ProductCard({ data }) {
                     (<img src={noImage}  alt="Imagen no encontrada"/>)
                 }
             </div>
-            <div class={styles.cardbody}>
-              <p className={styles.nameProduct}><strong>{data.name}</strong></p>
+            <div className={styles.cardbody}>
+              <p className={styles.nameProduct}>{data.name}</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"><strong>Precio:</strong> {'$ ' + data.price}</li>
+              <li class="list-group-item"><strong>{'$ ' + data.price}</strong></li>
               <label id="stock" />
-               {data.stock<1 ? <label className={styles.soldOut}>Producto Agotado</label> : <label/>}
+               {data.stock<1 ?
+                 <label className={styles.soldOut}>Producto Agotado</label>
+                 : <label/>}
             </ul>
+        </Link>
             <div class="card-body">
               <button disabled={data.stock<1}  onClick={() => handleClick(data)}><i class = "fas fa-cart-plus"/></button>
-              <Link to={`/products/detalle/${data.id}`}>
+              <Link to={`/products/detalle/${data.id}`} style={{ textDecoration: 'none' }}>
                 <button ><i class="fas fa-plus"/></button>
               </Link>
             </div>

@@ -19,19 +19,15 @@ export default function PayCart(props) {
 
     return (
         <div className="contenedor">
-            <h5>Total a pagar </h5>
-            <br />
             <div className="juntar">
                 <div className="grupo">
-                    <h6>Total:  </h6>
+                  <h5>Total a pagar </h5>
                 </div>
                 <div className="grupo">
-                    <h6> ${props.dato}</h6>
+                    <h3> ${props.dato}</h3>
                 </div>
             </div>
-            <div className="pagar">\
-                <button disabled={props.dato2.length < 1 ? true : false}  onClick={cambio}>Finalizar Pago</button>
-            </div>
+              <button disabled={props.dato2.length < 1 ? true : false}  onClick={cambio}>Finalizar Pago</button>
         </div>
     )
 };

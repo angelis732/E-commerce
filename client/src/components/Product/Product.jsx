@@ -130,23 +130,24 @@ function Product(props) {
     }
     return (
         <div className={style.container}>
+          <div className={style.container2}>
+            
             <Link to={`/`}>
                 <button className={style.arrow}>Volver</button>
             </Link>
             <div className={style.detail}>
-                <div className={style.imagen}>
+                <div className={style.image}>
                     <img src={imageUrl} alt="Cargando imagen..." />
                 </div>
                 <div className={style.data}>
                     <h2>{props.product.name}</h2>
                     <div className={style.start}>
-                        <h3 className={style.estrellitas}>{ratePromedio(valor)}</h3>
-
+                        <h3 className={style.stars}>{ratePromedio(valor)}</h3>
                     </div>
-                    <p><strong>Precio: </strong> ${props.product.price}</p>
-                    <form>
-                        <label form="quanty"><strong>Cantidad: </strong></label>
-                        <select name="quantity" id="quantity" onChange={change}>
+                    <span className={style.price}>Precio:<strong> ${props.product.price}</strong></span>
+                    <form className={style.quantity}>
+                        <label className={style.quantityLabel} form="quantity">Cantidad:</label>
+                        <select className={style.quantitySelect} name="quantity" id="quantity" onChange={change}>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -154,28 +155,28 @@ function Product(props) {
                         {props.product.stock < 1 ? <label className='agotado'>Producto Agotado</label> : <label className='stock'>Stock: {props.product.stock}</label>}
                     </form>
                     <div className="butt">
-
                         {props.product.stock > 0 || props.prodCart.find(x => x.id === props.id) ? <button className="btn btn-outline-dark" onClick={() => handleClick(props.product)}>Agregar a Carrito</button> : null}
-
                     </div>
-                    <p><strong>Descripción: </strong> {props.product.description}</p>
                 </div>
             </div>
-            <section className={style.sectionPrincipal}>
-                <h2>{props.product.Reviews && props.product.Reviews.length > 0 ? <h2 className={style.reseñas}>Reseñas</h2> : <h3 className={style.reseñas}>Este producto aún no tiene reseñas</h3>}</h2>
-                <div className={style.divReview}>
-
+                <p className={style.description}><strong>Descripción: </strong> {props.product.description}</p>
+           
+            <div className={style.review}>
+              <h2>{props.product.Reviews && props.product.Reviews.length > 0 ? <h5 className={style.reseñas}><strong>Reseñas sobre el producto</strong></h5> : <h3 className={style.reseñas}>Este producto aún no tiene reseñas</h3>}</h2>
+                <div>
                     {props.product.Reviews && props.product.Reviews.map((review) => {
-
-                        return <Review key={review.id} data={review} />
-
+                        return (<>
+                          <hr/>
+                            <Review key={review.id} data={review} />
+                        </>)
                     })}
+                    <hr/>
                 </div>
-
-            </section>
+            </div>
+          </div>
         </div>
     )
-};
+}
 
 function mapStateToProps(state) {
     return {

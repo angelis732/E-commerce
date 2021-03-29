@@ -66,7 +66,7 @@ export default function ViewOrder() {
                 customClass:{
                     title: "alertTitle"
                 }
-            }).then(r =>{} )
+            }).then(() =>{} )
         }
     }
     
@@ -110,20 +110,17 @@ export default function ViewOrder() {
         }
     }
 
-
-
+    
     return (
-
-
         <div className="contain" >
             <div className="titulo">
                 <h2>Pedidos de tu carrito</h2>
-
+                <div className="soporte">
+                    <button className="borrar" onClick={!user ? () => deleteLS() : () => deleteCart()}> Vaciar carrito </button>
+                </div>
                 <div className="parte-uno">
                     {cartProduct && cartProduct.map((info) => {
-
                         if (info !== undefined) {
-
                             let subTot;
                             subTot = info.price * info.quantity;
                             priceList.push(subTot);
@@ -180,13 +177,9 @@ export default function ViewOrder() {
                     })}
                 </div>
                 <br />
-                <div className="soporte">
-                    <button className="borrar" onClick={!user ? () => deleteLS() : () => deleteCart()}> Vaciar carrito </button>
-                </div>
-            </div>
             <div className="parte-dos">
-
                 <PayCart dato={totalHandler().toFixed(2)} dato2={cartProduct} dato3={user}/>
+            </div>
             </div>
         </div>
     )

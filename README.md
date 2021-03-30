@@ -8,7 +8,7 @@
 ## Resumen
 
 <p>
-Proyecto realizado en grupo de cinco, donde se tuvo como resultado un app completa con las siguientes features:
+Proyecto realizado en grupo de cinco personas, donde se tuvo como resultado un app completa con las siguientes features:
     
     ✔️ CRUD de productos
     
@@ -33,6 +33,7 @@ Proyecto realizado en grupo de cinco, donde se tuvo como resultado un app comple
   ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
   ![SQL](https://img.shields.io/badge/-SQL-333333?style=flat&logo=sql)
   <br>
+
 </p>
 
 <p align='left'>

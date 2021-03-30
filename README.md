@@ -10,11 +10,17 @@
 <p>
 Proyecto realizado en grupo de cinco personas, donde se tuvo como resultado un app completa con las siguientes features:
     
-    ✔️ CRUD de productos
+    ✔️ Catalogo de productos
     
-    ✔️ CRUD de categorías
+    ✔️ Gestión de productos (CRUD)
+    
+    ✔️ Gestión de categorías (CRUD)
+    
+    ✔️ Gestión de usuarios y claves
     
     ✔️ Autenticación con terceros
+    
+    ✔️ Reseñas con sistema de cinco estrellas.
     
     ✔️ Integración pasarela de pago (Mercado Pago)
     
@@ -22,7 +28,8 @@ Proyecto realizado en grupo de cinco personas, donde se tuvo como resultado un a
     
     ✔️ Carrito de compras
     
-    ✔️ Gestión de usuarios y claves
+    ✔️ Gestión de Órdenes de compra
+   
     
 
 #### Tecnologías utilizadas: React, redux, nodejs(Express), PostgreSQL, Sass, Bootstrap, entre otras.

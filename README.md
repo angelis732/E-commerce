@@ -41,6 +41,7 @@ Proyecto realizado en grupo de cinco personas, donde se tuvo como resultado un a
   ![SQL](https://img.shields.io/badge/-SQL-333333?style=flat&logo=sql)
   <br>
 
+
 </p>
 
 <p align='left'>
@@ -54,7 +55,11 @@ Proyecto realizado en grupo de cinco personas, donde se tuvo como resultado un a
 </p>
 
 <p align='left'>
-    <img margin='5%' width='60%' src='https://user-images.githubusercontent.com/33135114/113042922-2354ee80-9172-11eb-9813-05609d228f2e.png' </img>
+    <img margin='5%' width='60%' src='https://user-images.githubusercontent.com/33135114/113076881-5f09ab80-91a6-11eb-8fb7-2d0752af3f64.png' </img>
+</p>
+
+<p align='left'>
+    <img margin='5%' width='60%' src='https://user-images.githubusercontent.com/33135114/113076625-d723a180-91a5-11eb-981c-f4a6769e929f.png' </img>
 </p>
 
 <p align='left'>
